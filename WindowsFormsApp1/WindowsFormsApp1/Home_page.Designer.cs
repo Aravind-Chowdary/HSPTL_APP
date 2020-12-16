@@ -38,6 +38,7 @@
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -104,6 +106,8 @@
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.staffLoginToolStripMenuItem});
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
@@ -125,6 +129,12 @@
             this.carrierToolStripMenuItem.Name = "carrierToolStripMenuItem";
             this.carrierToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.carrierToolStripMenuItem.Text = "carrier";
+            // 
+            // staffLoginToolStripMenuItem
+            // 
+            this.staffLoginToolStripMenuItem.Name = "staffLoginToolStripMenuItem";
+            this.staffLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.staffLoginToolStripMenuItem.Text = "Staff login";
             // 
             // Home_page
             // 
@@ -159,5 +169,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carrierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staffLoginToolStripMenuItem;
     }
 }

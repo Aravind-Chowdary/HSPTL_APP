@@ -25,12 +25,18 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             register_page r1 = new register_page();
-            r1.ShowDialog(); // Shows Form2
+            r1.ShowDialog(); // Shows Registration form
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            login_page l1 = new login_page();
+            l1.ShowDialog(); // Shows Login
         }
     }
 }

@@ -19,7 +19,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Questions q1 = new Questions();
+            q1.ShowDialog(); // Shows Form2
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
