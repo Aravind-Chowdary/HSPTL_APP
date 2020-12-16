@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerGPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateMedicalStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookapointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactGPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chnagePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registerGPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateMedicalStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chnagePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,53 +48,13 @@
             this.homeToolStripMenuItem,
             this.bookapointmentToolStripMenuItem,
             this.contactGPToolStripMenuItem,
-            this.profileToolStripMenuItem});
+            this.profileToolStripMenuItem,
+            this.notificationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // bookapointmentToolStripMenuItem
-            // 
-            this.bookapointmentToolStripMenuItem.Name = "bookapointmentToolStripMenuItem";
-            this.bookapointmentToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.bookapointmentToolStripMenuItem.Text = "Book apointment";
-            // 
-            // contactGPToolStripMenuItem
-            // 
-            this.contactGPToolStripMenuItem.Name = "contactGPToolStripMenuItem";
-            this.contactGPToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.contactGPToolStripMenuItem.Text = "Contact GP";
-            // 
-            // profileToolStripMenuItem
-            // 
-            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateDetailsToolStripMenuItem,
-            this.chnagePasswordToolStripMenuItem});
-            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.profileToolStripMenuItem.Text = "Profile";
-            // 
-            // updateDetailsToolStripMenuItem
-            // 
-            this.updateDetailsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.medToolStripMenuItem});
-            this.updateDetailsToolStripMenuItem.Name = "updateDetailsToolStripMenuItem";
-            this.updateDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateDetailsToolStripMenuItem.Text = "Update details";
-            // 
-            // chnagePasswordToolStripMenuItem
-            // 
-            this.chnagePasswordToolStripMenuItem.Name = "chnagePasswordToolStripMenuItem";
-            this.chnagePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.chnagePasswordToolStripMenuItem.Text = "Chnage password";
-            // 
-            // medToolStripMenuItem
-            // 
-            this.medToolStripMenuItem.Name = "medToolStripMenuItem";
-            this.medToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.medToolStripMenuItem.Text = "Med";
             // 
             // homeToolStripMenuItem
             // 
@@ -115,6 +76,54 @@
             this.updateMedicalStatusToolStripMenuItem.Name = "updateMedicalStatusToolStripMenuItem";
             this.updateMedicalStatusToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.updateMedicalStatusToolStripMenuItem.Text = "Update medical status";
+            // 
+            // bookapointmentToolStripMenuItem
+            // 
+            this.bookapointmentToolStripMenuItem.Name = "bookapointmentToolStripMenuItem";
+            this.bookapointmentToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.bookapointmentToolStripMenuItem.Text = "Book apointment";
+            this.bookapointmentToolStripMenuItem.Click += new System.EventHandler(this.bookapointmentToolStripMenuItem_Click);
+            // 
+            // contactGPToolStripMenuItem
+            // 
+            this.contactGPToolStripMenuItem.Name = "contactGPToolStripMenuItem";
+            this.contactGPToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.contactGPToolStripMenuItem.Text = "Contact GP";
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateDetailsToolStripMenuItem,
+            this.chnagePasswordToolStripMenuItem});
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.profileToolStripMenuItem.Text = "Profile";
+            // 
+            // updateDetailsToolStripMenuItem
+            // 
+            this.updateDetailsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.medToolStripMenuItem});
+            this.updateDetailsToolStripMenuItem.Name = "updateDetailsToolStripMenuItem";
+            this.updateDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.updateDetailsToolStripMenuItem.Text = "Update details";
+            // 
+            // medToolStripMenuItem
+            // 
+            this.medToolStripMenuItem.Name = "medToolStripMenuItem";
+            this.medToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.medToolStripMenuItem.Text = "Med";
+            // 
+            // chnagePasswordToolStripMenuItem
+            // 
+            this.chnagePasswordToolStripMenuItem.Name = "chnagePasswordToolStripMenuItem";
+            this.chnagePasswordToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.chnagePasswordToolStripMenuItem.Text = "Chnage password";
+            // 
+            // notificationToolStripMenuItem
+            // 
+            this.notificationToolStripMenuItem.Name = "notificationToolStripMenuItem";
+            this.notificationToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.notificationToolStripMenuItem.Text = "Notifications";
             // 
             // Cust_menu
             // 
@@ -144,5 +153,6 @@
         private System.Windows.Forms.ToolStripMenuItem registerGPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateMedicalStatusToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notificationToolStripMenuItem;
     }
 }

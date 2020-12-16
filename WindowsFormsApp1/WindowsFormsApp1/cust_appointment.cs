@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Cust_menu : Form
+    public partial class cust_appointment : Form
     {
-        public Cust_menu()
+        public cust_appointment()
         {
             InitializeComponent();
-        }
-
-        private void bookapointmentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            cust_appointment ca1 = new cust_appointment();
-            ca1.ShowDialog();
         }
     }
 }

@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cust_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cust_appointment.Designer.cs">
+      <DependentUpon>cust_appointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cust_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="staff_menu.Designer.cs">
       <DependentUpon>staff_menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cust_appointment.resx">
+      <DependentUpon>cust_appointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cust_menu.resx">
       <DependentUpon>Cust_menu.cs</DependentUpon>
     </EmbeddedResource>
