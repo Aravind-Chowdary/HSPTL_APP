@@ -34,6 +34,8 @@
             this.notificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkapointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customervistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whoNeedCheckupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkPatientDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +62,13 @@
             // 
             // checkemailToolStripMenuItem
             // 
+            this.checkemailToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.whoNeedCheckupToolStripMenuItem,
+            this.checkPatientDetailsToolStripMenuItem});
             this.checkemailToolStripMenuItem.Name = "checkemailToolStripMenuItem";
-            this.checkemailToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.checkemailToolStripMenuItem.Text = "Check_email";
+            this.checkemailToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.checkemailToolStripMenuItem.Text = "Check Patients";
+            this.checkemailToolStripMenuItem.Click += new System.EventHandler(this.checkemailToolStripMenuItem_Click);
             // 
             // notificationToolStripMenuItem
             // 
@@ -81,6 +87,18 @@
             this.customervistToolStripMenuItem.Name = "customervistToolStripMenuItem";
             this.customervistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.customervistToolStripMenuItem.Text = "Customer_vist";
+            // 
+            // whoNeedCheckupToolStripMenuItem
+            // 
+            this.whoNeedCheckupToolStripMenuItem.Name = "whoNeedCheckupToolStripMenuItem";
+            this.whoNeedCheckupToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.whoNeedCheckupToolStripMenuItem.Text = "Who need checkup";
+            // 
+            // checkPatientDetailsToolStripMenuItem
+            // 
+            this.checkPatientDetailsToolStripMenuItem.Name = "checkPatientDetailsToolStripMenuItem";
+            this.checkPatientDetailsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.checkPatientDetailsToolStripMenuItem.Text = "check patient details";
             // 
             // staff_menu
             // 
@@ -106,5 +124,7 @@
         private System.Windows.Forms.ToolStripMenuItem notificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkapointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customervistToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whoNeedCheckupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkPatientDetailsToolStripMenuItem;
     }
 }
